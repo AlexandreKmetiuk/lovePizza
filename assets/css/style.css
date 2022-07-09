@@ -192,7 +192,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url("/assets/img/banner.jpg");
+  background-image: url('/assets/img/banner.jpg');  
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -209,6 +209,7 @@ body {
   justify-content: center;
   height: 100px;
   background-color: rgba(0, 0, 0, 0.7);
+  
 }
 
 .banner-titulo {
@@ -393,16 +394,6 @@ body {
   letter-spacing: 4px;
 }
 
-@media (max-width: 850px){
-  .sobre-titulo--principal{
-    font-size: 3rem;
-  }
-
-  .sobre-titulo--reconhecimento{
-    font-size: 30px;
-  }
-}
-
 .sobre-descricao {
   font-size: 1.5rem;
   max-width: 700px;
@@ -421,6 +412,25 @@ body {
   max-width: 90%;
   height: 700px;
 }
+
+
+@media (max-width: 850px){
+  .sobre-titulo--principal{
+    font-size: 3rem;
+  }
+
+  .sobre-titulo--reconhecimento{
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1400px){
+  .sobre-imagem-pizza img {
+    display: none;
+  }
+}
+
+
 
 .depoimentos {
   margin-top: 30px;
