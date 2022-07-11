@@ -189,7 +189,7 @@ body {
 }
 
 .banner {
-  background-image: url("assets/img/banner.jpg");
+  background-image: url("../img/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
