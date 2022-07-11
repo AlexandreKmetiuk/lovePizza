@@ -189,10 +189,11 @@ body {
 }
 
 .banner {
-  background-image: url(`/assets/img/banner.jpg`);
+  background-image: url("./assets/img/banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-position: center top;
   height: 950px;
   margin-bottom: 30px;
 }
@@ -204,7 +205,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   background-color: rgba(0, 0, 0, 0.7);
 }
 
@@ -212,6 +212,18 @@ body {
   font-family: var(--font-Berkshire);
   font-size: 5.875rem;
   color: var(--text-color-light);
+}
+
+.banner-titulo span {
+  color: var(--base-color);
+}
+
+.banner-texto {
+  font-size: 1.875rem;
+  color: var(--text-color-light);
+  max-width: 700px;
+  margin-top: 30px;
+  text-shadow: 0px 2px 2px #555555;
 }
 
 @media (max-width: 850px) {
@@ -225,18 +237,6 @@ body {
     margin-right: 2rem;
     min-width: 350px;
   }
-}
-
-.banner-titulo span {
-  color: var(--base-color);
-}
-
-.banner-texto {
-  font-size: 1.875rem;
-  color: var(--text-color-light);
-  max-width: 700px;
-  margin-top: 30px;
-  text-shadow: 0px 2px 2px #555555;
 }
 
 .banner-texto::after {
@@ -318,6 +318,9 @@ body {
   height: 200px;
   max-width: 200px;
   border-radius: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 @media (max-width: 850px) {
@@ -412,6 +415,9 @@ body {
 .sobre-imagem-pizza img {
   height: 100%;
   width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
 }
 
 @media (max-width: 850px) {
